@@ -1,10 +1,11 @@
-import keyToSound from "./keyToSound.js"
+import { DrumMachine } from "./components/DrumMachine.jsx";
 
 function App() {
-
-  return <>
-    <h1>{keyToSound.q.drumName}</h1>
-  </>;
+  return (
+    <main className="flex h-dvh items-center justify-center bg-neutral-700">
+      <DrumMachine />
+    </main>
+  );
 }
 
 export default App;
