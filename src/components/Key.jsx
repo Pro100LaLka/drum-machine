@@ -40,7 +40,6 @@ export function Key({ keyName, fileName, drumName, power, volume, onPlay }) {
     >
       {keyName}
       <audio
-        volume={volume}
         ref={soundRef}
         src={`https://cdn.freecodecamp.org/curriculum/drum/${fileName}`}
       ></audio>
